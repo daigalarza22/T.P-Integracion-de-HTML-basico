@@ -1,0 +1,14 @@
+*{
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+.fondo{
+    background-color: black;
+    color: white;
+}
+.sin_lista{
+    list-style-type: none;
+}
+.encabezado{
+    background-color: #F0A83E;
+    color: #FFFFFF;
+}
