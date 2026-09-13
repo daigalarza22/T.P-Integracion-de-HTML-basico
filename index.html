@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <!--Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,52 +12,70 @@
 </head>
 <body>
     <header>
-        <div>
-          <nav class="fondo">
-             <p>Grandes ofertas en comederos</p>
-             <ul class="sin_lista">
-                 <li>Español</li>
-                 <li>$ARG</li>
+        <!--top-->
+        <div class="barra-navegacion">
+          <p>Grandes ofertas en comederos</p>
+          <nav class="enlace">
+             <ul class="sin-lista">
+                 <li><a href="#">Español</a></li>
+                 <li><a href="#">$ARG</a></li>
              </ul>
           </nav> 
         </div>
+        <!--header-->
        <div class="encabezado">
-         <img src="./img/Logo.png" alt="Logo">
-          <ul class="sin_lista">
-             <li>Categorías</li>
-             <li>Pets</li>
-             <li>Nosotros</li>
-             <li>Contactanos</li>
-         </ul>
+          <div class="logo">
+             <img src="img/Cat.png" alt="Cat">  
+             <h1>
+                 <span class="titulo-marron">Front</span>
+                 <span class="titulo-blanco">Cat&Dog</span>
+             </h1>
+             <img src="img/Dog.png" alt="Dog">
+          </div>
+         <div class="menu">
+             <ul class="menu-lista">
+                 <li> <img src="img/patita.png" alt="patita"> Categorías</li>
+                 <li> <img src="img/patita.png" alt="patita"> Pets</li>
+                 <li> <img src="img/patita.png" alt="patita"> Nosotros</li>
+                 <li> <img src="img/patita.png" alt="patita"> Contactanos</li>
+             </ul>
+         </div>
        </div>
-       
     </header>
+
     <main>
-        <!--Seccion banner-->
-        <img src="img/fondo.png" alt="Fondo">
-        <ul>
-            <li>¡Es un placer tenerte aquí! </li>
-            <li>¡Comederos en descuento!</li>
-            <li>COMEDEROS </li>
-        </ul>
-        <section>Productos</section>
-            <img src="img/patita.png" alt="patita">
-            <ul>
-                <li>Productos Destacados</li>
-                <li>Comederos - Accesorios – Comida</li>
-
-                <img src="img/churrasquito.png" alt="churrasquito">
-                <li>Juguete Churrasquito </li>
-                <li>$150 </li>
-                <img src="img/churrasquito.png" alt="churrasquito">
-                <li>Juguete Churrasquito </li>
-                <li>$150 </li>
-                <img src="img/churrasquito.png" alt="churrasquito">
-                <li>Juguete Churrasquito </li>
-                <li>$150 </li>
-            </ul>
-
-
+        <section class="contenedor">
+             <!--Seccion banner-->
+             <article class="slide">
+                 <div class="slide-img">
+                     <img src="img/fondo.png" alt="Fondo">
+                 </div>
+                 <ul class="slide-lista">
+                     <li>¡Es un placer tenerte aquí! </li>
+                     <li>¡Comederos en descuento!</li>
+                     <li><a href="#" class="boton">COMEDEROS</a></li>
+                 </ul>
+             </article>
+             <!--seccion productos-->
+             <article class="Productos-destacados">
+                 Productos
+                 <img src="img/patita.png" alt="patita">
+                 <ul>
+                     <li>Productos Destacados</li>
+                     <li>Comederos - Accesorios – Comida</li>
+                     <img src="img/churrasquito.png" alt="churrasquito">
+                     <li>Juguete Churrasquito </li>
+                     <li>$150 </li>
+                     <img src="img/churrasquito.png" alt="churrasquito">
+                     <li>Juguete Churrasquito </li>
+                     <li>$150 </li>
+                     <img src="img/churrasquito.png" alt="churrasquito">
+                     <li>Juguete Churrasquito </li>
+                     <li>$150 </li>
+                 </ul>  
+             </article>
+        </section>
+        
     </main>
     <footer>
        <div class="fondo">
