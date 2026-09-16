@@ -53,16 +53,47 @@ li a{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
 }
 .slide-lista{
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    gap: 10px;
+    gap: 20px;
+    text-align: center;
 }
 .boton{
     background-color: #F0A83E;
-    padding: 10px 25px;
+    padding: 15px 25px;
     border-radius: 5px;
-
+}
+.texto-recuadro{
+    background-color: #FFFFFF;
+    color: #3C2313;
+    font-size: 30px;
+    padding: 5px;
+}
+.Productos-destacados{
+    text-align: center;
+    margin-top: 40px;
+}
+h2{
+    font-size: 30px;
+    color: #3C2313;
+}
+.lista-categoria{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color: black;
+    list-style: none;
+    margin: 10px;
+}
+.lista-categoria a{
+    color: #666666;
+    text-decoration: none;
 }
