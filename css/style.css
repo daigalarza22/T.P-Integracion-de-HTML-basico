@@ -29,7 +29,7 @@ li a{
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 15px 30px;
     align-items: center;
 }
 .titulo-marron{
@@ -42,11 +42,20 @@ li a{
 .menu-lista{
     display: flex;
     list-style-type: none;
-    gap: 8px;
+    gap: 20px;
 }
 .menu-lista li{
     display: flex;
     align-items: center;
+}
+/*Agregar iconos con before*/
+.menu-lista a::before{
+    font: var(--fa-font-solid);
+    content: '\f1b0';
+}
+/*Agregar hover a la lista de menu*/
+.menu-lista a:hover{
+    color: #3C2313;
 }
 /*main*/
 .slide{
@@ -70,6 +79,10 @@ li a{
     background-color: #F0A83E;
     padding: 15px 25px;
     border-radius: 5px;
+}
+/*agregar hover al boton comederos*/
+.boton:hover{
+    background-color: #3C2313;
 }
 .texto-recuadro{
     background-color: #FFFFFF;
@@ -120,7 +133,7 @@ h2{
 /*formulario*/
 .contenedor-contacto{
     margin-top: 40px;
-    padding: 10px;
+    padding: 30px;
 }
 h2{
     text-align: center;
@@ -136,8 +149,19 @@ h2{
     width: 350px;
     height: 45px;
     background-color: #3C2313;
+    color: #FFFFFF;
     border-radius: 22px;
     border: none;
+}
+/*Agregar hover a los inputs*/
+.contenedor-contacto input:hover{
+    background-color: #5e3f2f;
+    border: 1px solid #F0A83E;
+}
+/*focus*/
+.contenedor-contacto input:focus{
+    background-color: #5e3f2f;
+    border: 1px solid #F0A83E;
 }
 .campos{
     display: flex;
@@ -151,12 +175,14 @@ button{
     color: #FFFFFF;
     font-size: 19px;
 }
-.boton-resetear{
+.boton-formulario{
     background-color: #8A8787;
 }
-.boton-enviar{
+/*Agregar hover a los botones*/
+.boton-formulario:hover{
     background-color: #F0A83E;
 }
+/*suscripcion*/
 .suscripcion{
     background-color: #F0A83E;
     display: flex;
@@ -179,18 +205,29 @@ form{
     font-size: 20px;
     color: #FFFFFF;
 }
-.inscripccion input{
+.inscripcion input{
     background-color: #FFFFFF;
     width: 270px;
     height: 40px;
     border-radius: 15px;
     border: none;
 }
-.inscripccion button{
-    background-color: #3C2313;
+/*Agregar hover y focus*/
+.inscripcion input:hover, 
+.inscripcion input:focus{
+   border: 1px solid #3C2313;
+   outline: none; /*saca el borde que viene por defecto*/
+}
+.inscripcion button{
+    background-color:#3C2313;
+    color: #FFFFFF;
     font-size: 10px;
     width: 75px;
     height: 34px;
+}
+/*agregar hover al boton inscripcion*/
+.inscripcion button:hover{
+    background-color:#5e3f2f;
 }
 /*footer*/
 .fondo{
@@ -199,26 +236,32 @@ form{
     font-weight: bold;
     font-size: 13px;
     text-align: center;
+    padding: 5px;
 }
 .contenedor-footer{
     background-color: #3C2313;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    padding: 40px 30px;
 }
-.localidad{
+.contenedor-iconos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.icono{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.localidad i{
-    font-size: 30px;
+.icono i{
+    font-size: 35px;
     background-color: #9493933e;
     color: #a19e9e;
     border: 1px solid white;
     border-radius: 45px;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,21 +276,9 @@ form{
     color: #8A8787;
     font-size: 10px;
 }
-.telefono{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.titulo-blanco{
+    color: #FFFFFF;
 }
-.telefono i{
-     font-size: 30px;
-    background-color: #9493933e;
-    color: #a19e9e;
-    border: 1px solid white;
-    border-radius: 45px;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.titulo-amarillo{
+    color: #F0A83E;
 }
