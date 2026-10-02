@@ -150,8 +150,12 @@ h2{
     height: 45px;
     background-color: #3C2313;
     color: #FFFFFF;
-    border-radius: 22px;
+    border-radius: 15px;
     border: none;
+    padding-left: 15px;
+}
+.contenedor-contacto input::placeholder{
+    color: #FFFFFF;
 }
 /*Agregar hover a los inputs*/
 .contenedor-contacto input:hover{
@@ -162,10 +166,6 @@ h2{
 .contenedor-contacto input:focus{
     background-color: #5e3f2f;
     border: 1px solid #F0A83E;
-}
-.campos{
-    display: flex;
-    flex-direction: column;
 }
 button{
     width: 115px;
@@ -211,6 +211,7 @@ form{
     height: 40px;
     border-radius: 15px;
     border: none;
+    padding-left: 10px;
 }
 /*Agregar hover y focus*/
 .inscripcion input:hover, 
@@ -281,4 +282,98 @@ form{
 }
 .titulo-amarillo{
     color: #F0A83E;
+}
+@media (max-width:580px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .slide{
+        display: flex;
+        flex-direction: column;
+        height: 440px;
+        justify-content: center;
+        align-items: center;
+        background-position: 0px -75px;
+    }
+    .slide-lista{
+        text-align: right;
+    }
+    .Productos-destacados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .Productos-destacados img{
+        width: 90px;
+        height: 83px;
+    }
+    .Productos-destacados h2{
+        font-size: 40px;
+    }
+   .contenedor-tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin:40px;
+    }
+    .contenedor-contacto h2{
+        font-size: 40px;
+    }
+    .campos input{
+        width: 298px;
+        height: 40px;
+    }
+    .botones-form{
+        display: flex;
+        text-align: center;
+        margin: 30px 10px;
+        gap: 5px;
+    }
+    .boton-formulario{
+        width: 180px;
+        height: 40px;
+        border-radius: 25px;
+    }
+    .suscripcion{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .titulo-suscripcion{
+        font-size: 20px;
+        gap: 20px;
+    }
+    .inscripcion{
+        width: 300px;
+        height: 40px;
+        margin: 5px 15px;
+    }
+    .inscripcion button{
+       width: 100px;
+        font-size: 16px;
+        padding: 5px;
+    }
+    .contenedor-footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+    .encabezado{
+        padding: 14px 10px;
+    }
+    .logo h1{
+        font-size: 16px;
+    }
+    .menu-lista li{
+        font-size: 10px;
+    }
+    .menu-lista{
+        gap: 5px;
+    }
 }
